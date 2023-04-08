@@ -1,0 +1,521 @@
+/* CSS reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables  */
+:root{
+    --navbar-height:100px;
+}
+.body{
+    min-height: 100px;
+    overflow: hidden;
+}
+/* Navigation bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: relative; */
+    top: 0px;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    
+
+
+}
+#navbar::before{
+      content: "";
+      /* background-color: rgb(14, 24, 49); */
+      /* background-color: rgb(1, 33, 77); */
+      /* background-color: rgb(94 39 76); */
+      background-color: rgb(95 70 87);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+    
+      top: 0px;
+      left: 0px;
+      z-index: -1;
+      opacity: 0.9; 
+     /* position: fixed; */
+      
+
+}
+/* Navigation bar :Logo and image  */
+#logo{
+       
+       
+       margin-top: -50px;
+       margin-left: 20px;
+       /* position: absolute;
+       display: inline-block; */
+       z-index: 11;
+       
+
+}
+ #logo img{
+    
+    margin: 3px 2px ;
+    height: 50px;
+    position: absolute;
+    /* display: inline-block; */
+    
+
+
+ }
+
+/* Navigation bar :List Styling  */
+#navbar ul{
+     display: flex;
+     flex: 0.9;  
+     z-index: 10;
+     justify-content: flex-end;
+     
+}
+#navbar ul li{
+    color: white;
+   
+    list-style: none;
+    font-size: 1.5rem;
+    float: right;
+    /* margin-left: 40px; */
+}
+#navbar ul li a{
+            color: white;
+            display: block;
+            padding: 3px 0px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-left: 85px;
+            /* float: right; */
+            /* width: 60%; */
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    margin-top: 0px;
+}
+/* #home::before{
+    content: "";
+    background:url(photos/Food1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 83%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    margin-top: 140px;
+} */
+
+
+
+video#bgVideo {
+    position: absolute; 
+    /* position: relative; */
+    top: 0px;
+    left: 0px;
+    /* min-width: 100%; */
+    /* min-height: 80%; */
+    width: 100%;
+    height: 86%;
+    z-index: -1; }
+
+   background:url(foodVideo2.mp4) {animation-name:deepa;
+    animation-iteration-count: infinite;
+    
+   }
+
+   /* @keyframes deepa{
+      0%{transform:scale(0.2);}
+      50%{transform:scale(0.1);}
+   } */
+   @keyframes deepa{
+      0%{
+         top: 0px;
+         left: 0px;
+      }
+      50%{
+         top: 100px;
+         right: 0px;
+      }
+   }
+  
+   #home::before{
+    content: "";
+    background:url(fun2.jpeg) no-repeat center center/cover;
+    position: absolute;
+    /* position: fixed; */
+    height: 100%;
+    width: 100%;
+    z-index: -10;
+    opacity: 0.4;
+    margin-top: 140px;
+}
+
+
+  #home h1{
+      /* color: rgb(59, 28, 55); */
+      color: white;
+      text-align: center;
+       font-family: 'Libre Baskerville', serif; 
+font-family: 'Lobster', cursive;
+  }
+  #home  p{
+    /* color: rgb(94, 39, 76); */
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+  }
+ /* Utility Classes  */
+ .h-primary{
+    font-size: 4rem;
+    /* padding: 2px; */
+    position: relative;
+    margin-top: 180px;
+ }
+ .h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+ }
+
+ .btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(59, 28, 55);
+    color: white ;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+ }
+ .center{
+    text-align: center;
+ }
+ #services{
+    margin: 5px;
+    display: flex;
+ }
+ #services::before{
+    content: "";
+    /* background:url(fun2.jpeg) no-repeat center center/cover; */
+    position: absolute;
+    height: 83%;
+    width: 100%;
+    z-index: -10;
+    opacity: 0.9;
+    /* margin-top: 140px; */
+
+ }
+ .box{
+    border: 4px solid black;
+    border-radius: 25px;
+    width: 31%;
+    height: 290px;
+   margin: 50px;
+   /* background-color:  rgb(213, 221, 224); */
+   background-color:  rgb(240 232 238);
+   
+
+ }
+ .box img{
+    height: 30%;
+    margin: auto;
+    display: block;
+    width:170px;
+    position: relative;
+    margin-top: 30px;
+ }
+
+    /* ....... MENU SECTION... ........MENU SECTION ............MENU SECTION....................MENU..... */
+
+    .menu-container{
+      display: flex;
+      flex-direction: column;
+      /* background-color: rgb(240 232 238); */
+      background-color: rgb(225, 218, 223);
+      width: 800px;
+      /* margin-left: 80px; */
+
+    }
+    .menu{
+      /* background-color: green; */
+      /* border: 2px solid black; */
+      width: 800px;
+      height: 820px;
+      margin-left: 40px
+    
+    }
+    #mline1 {
+      display: block;
+      margin-left: 8%;
+      margin-top: 14%;
+
+
+    }
+    span1{
+      font-size: 4.2rem;
+      font-weight: 400;
+      /* font-style: italic; */
+      color: rgb(59, 28, 55);
+    }
+    span2{
+      font-size: 2rem;
+      font-weight:lighter;
+      font-style: italic;
+      color: black;
+    }
+    form.search input[type=text] {
+      padding: 15px;
+      font-size: 17px;
+      border: 4px solid rgb(95 70 87);
+      border-radius: 16px;
+      float: left;
+      width:70%;
+      background: #f1f1f1;
+      position: relative;
+      margin-top: -580px;
+      margin-left: 110px;
+    }
+    /* form.search button {
+      float: left;
+      width: 8%;
+      padding:25px;
+      background: #a889bb;
+      opacity: 0.8;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none; /* Prevent double borders */
+      /* cursor: pointer;
+      position: relative;
+      margin-top: -285.5px;
+      margin-left: 594px;
+      border-radius: 8px; 
+
+    } */
+
+    #btn2{
+      padding: 8px 16px;
+      border: 0.5px solid rgb(74, 42, 70);
+      background-color: rgb(74, 42, 70);
+      color: white ;
+      margin: 17px;
+      font-size: 1.5rem;
+      border-radius: 40px;
+      cursor: pointer;
+      width: 20%;
+      height: 60px;
+      box-shadow: 0px 0px 0px 8px rgb(97, 66, 93) ;
+      position: relative;
+      margin-top: -105px;
+      margin-left: 320px;
+     
+   }
+
+   #fm{
+      width: 500px;
+      height: 400px;
+      position: relative;
+      /* margin-top: -00px; */
+      margin-top: -700px;
+      margin-bottom:120px;
+      margin-left: 160px;
+      z-index: 8;
+   }
+   .sideImg img{
+      height: 400px;
+      width:660px;
+      position: relative;
+      margin-top:-600px;
+      margin-bottom: 14px;
+      margin-left: 55%;
+      opacity: 1;
+      z-index: 8;
+   }
+ 
+   .sideBg{
+      display: flex;
+      background-color: #b5b8bd;
+      height: 800px;
+      width: 660px;
+      margin-top: -825px;
+      margin-left: 55%;
+   }
+   .sideTextBox{
+      position: absolute;
+      margin-top: -730px;
+      margin-left: 60%;
+      font-size: 50px;
+   }
+    .sideTextBox #d1{
+   
+    font-family: 'Alfa Slab One';
+/* font-family: 'League Spartan', sans-serif; */
+/* font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Lobster', cursive; */
+
+        color: transparent;
+       -webkit-text-stroke: 2px rgb(73, 46, 85);
+       background: url(back.jpeg);
+       -webkit-background-clip: text;
+       background-position: 0 0;
+       animation:back 20s linear infinite;
+   }
+   @keyframes back{
+      100%{
+         background-position: 2000px 0;
+      }
+   }
+ 
+ /* clients sectioin ............clients section.................... */
+  #clients-section{
+    position: relative;
+    height: 40px;
+  
+ } 
+ #client-section::before{
+    content: "";
+    /* background:url(down\ bg.jpg) no-repeat center center/cover; */
+ background-color: rgb(155, 128, 149);
+    
+    position: absolute;
+    height: 58%;
+    width: 100%;
+    z-index: -1;
+    /* opacity: ; */
+    margin-top: 13px;
+ }
+ 
+ /* #clients{
+    display:flex ;
+    flex-wrap: wrap;
+ 
+    height: 120px; 
+    flex:0 1 10%;
+    
+    justify-content: center;
+    align-items: center;
+ } */
+
+ /* Using Grid for setting Client section  */
+
+ #clients{
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    grid-template-rows: 130px 130px ;
+    grid-row-gap: 2px;
+    grid-column-gap: 18px;
+    
+ }
+ .client-item{
+    /* border: 4px solid gold; */
+    /* background-color: green; */
+   align-items: center;
+   /* padding: 5px 2px; */
+    /* position: absolute; */
+    margin-top: 150px;
+    margin-left: 140px;
+  }
+   /* #clients>div :nth-child(3){
+    grid-row-start: 1;
+    grid-row-end: 3;
+ }   */
+  
+ /* .client-item{
+    padding: 5px;
+    margin-left: 14px;
+    display: flex;
+     flex-direction: column;
+     flex:0 1 10%;  
+   
+ } */
+ #clients img{
+  
+    background-color: white;
+    height: 90px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow:   3px 3px 1px 1px rgb(104, 102, 102);
+   
+ 
+ }
+
+ #clientBoss{
+   margin-top: -250px;
+   margin-left: 56%;
+ }
+ h3.h-primary1{
+    font-size: 4rem;
+    /* padding: 2px; */
+    /* position: relative; */
+    position: absolute;
+    /* margin-bottom: 30px; */
+    margin-top: 24px;
+    /* text-align: center; */
+    margin-left:6.5%;
+    font-weight: lighter;
+    font-style: italic;
+    /* text-shadow: 2px 2px rgb(104, 102, 102); */
+    text-shadow: 2px 2px rgb(198, 192, 192);
+ }
+#contact{
+    position: relative;
+    font-weight: 20;
+   
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url(photos/bgdown4.jpg) no-repeat center center/cover;
+    /* background: url(fun2.jpeg) no-repeat center center/cover; */
+    /* background-color:rgb(155, 128, 149) ; */
+    margin-top: 70px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:4px ;
+}
+#contact-box input,#contact-box textarea{
+             width: 100%;
+             padding: 0.5rem;
+             border-radius: 10px;
+             font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+.h-primary4{
+    font-size: 4rem;
+    /* padding: 2px; */
+    position: relative;
+    margin-top: 105px;
+    /* padding-bottom: 10px; */
+ }
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+}

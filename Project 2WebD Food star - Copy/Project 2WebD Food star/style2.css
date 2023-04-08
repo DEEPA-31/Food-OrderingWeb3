@@ -1,0 +1,269 @@
+/* CSS reset  */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* CSS Variables  */
+:root{
+    --navbar-height:100px;
+}
+.body{
+    min-height: 100px;
+    overflow: hidden;
+}
+/* Navigation bar  */
+#navbar{
+    display: inline-flex;
+    align-items: center;
+   
+    top: 0px;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+#navbar::before{
+      content: "";
+      /* background-color: rgb(14, 24, 49); */
+      /* background-color: rgb(1, 33, 77); */
+      background-color: rgb(94 39 76);
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0px;
+      left: 0px;
+   
+      /* opacity: 0.9; */
+     /* position: fixed; */
+      
+
+}
+/* Navigation bar :Logo and image  */
+#logo{
+       margin: 2px 3px;
+       /* position: absolute;
+       display: inline-block;  */
+       
+
+}
+ #logo img{
+    
+    margin: 3px 10px ;
+    height: 35px;
+    position: relative;
+ }
+
+/* Navigation bar :List Styling  */
+#navbar ul{
+     display: flex;
+     /* change in this line */
+     flex: 0.9;  
+     z-index: 10;
+     justify-content: flex-end;
+}
+#navbar ul li{
+    color: white;
+   
+    list-style: none;
+    font-size: 1.5rem;
+    
+    /* margin-left: 40px; */
+}
+#navbar ul li a{
+            color: white;
+            display: block;
+            padding: 3px 7px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin-left: 85px;
+            /* float: right; */
+            /* width: 60%; */
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 10px;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    margin-top: 0px;
+}
+/* #home::before{
+    content: "";
+    background:url(photos/Food1.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 83%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    margin-top: 140px;
+} */
+
+video#bgVideo {
+    position: absolute; 
+    top: 0px;
+    left: 0px;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; 
+   }
+   
+  #home h1{
+      color: rgb(59, 28, 55);
+      text-align: center;
+      /* font-family: 'Libre Baskerville', serif; */
+font-family: 'Lobster', cursive;
+  }
+  #home  p{
+    color: rgb(94, 39, 76);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Libre Baskerville', serif;
+  }
+ /* Utility Classes  */
+ .h-primary{
+    font-size: 3.8rem;
+    /* padding: 2px; */
+    position: relative;
+    margin-top: 110px;
+ }
+ .h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+ }
+
+ .btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(59, 28, 55);
+    color: white ;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+    cursor: pointer;
+ }
+ .center{
+    text-align: center;
+ }
+ #services{
+    margin: 20px;
+    display: flex;
+ }
+ .box{
+    border: 4px solid black;
+    border-radius: 25px;
+    width: 31%;
+    height: 280px;
+   margin: 50px;
+   /* background-color:  rgb(213, 221, 224); */
+   background-color:  rgb(240 232 238);
+   
+
+ }
+ .box img{
+    height: 30%;
+    margin: auto;
+    display: block;
+    width:170px;
+    position: relative;
+    margin-top: 30px;
+ }
+ /* clients sectioin  */
+ #clients-section{
+    position: relative;
+    height: 24px;
+  
+ }
+ #client-section::before{
+    content: "";
+    /* background:url(down\ bg.jpg) no-repeat center center/cover; */
+ background-color: rgb(155, 128, 149);
+    
+    position: absolute;
+    height: 30%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    margin-top: 120px;
+ }
+ 
+ #clients{
+    display:flex ;
+    flex-wrap: wrap;
+    /* flex-flow: nowrap; */
+     /* width: 100%; */
+    height: 150px; 
+    flex:0 1 10%;
+    
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ .client-item{
+    padding: 15px;
+    margin-left: 14px;
+    display: flex;
+     /* flex-direction: column; */
+     flex:0 1 10%;  
+   
+ }
+ #clients img{
+    position: relative;
+    height: 160px;
+    margin-top:28px ;
+    /* width: 25%; */
+ }
+ .h-primary1{
+    font-size: 3.8rem;
+    /* padding: 2px; */
+    position: relative;
+    margin-bottom: 30px;
+ }
+#contact{
+    position: relative;
+    font-weight: 20;
+   
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background: url("photos/bgdown4.jpg") no-repeat center center/cover;
+    /* background-color:rgb(155, 128, 149) ; */
+    margin-top: 60px;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+}
+#contact-box input,#contact-box textarea{
+             width: 100%;
+             padding: 0.5rem;
+             border-radius: 10px;
+             font-size: 1.3rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+
+footer{
+    background: black;
+    color: white;
+    position: relative;
+    padding: 9px 20px;
+}
